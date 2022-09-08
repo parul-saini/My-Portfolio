@@ -807,7 +807,7 @@ nav .fa-solid {
 
 @media only screen and (max-width:371px){
 #header{
-    height: 120vh;
+    height: 100vh;
 }
 .header-text{
     margin-top: 26vh;
