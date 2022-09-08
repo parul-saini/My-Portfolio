@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Parul-Saini</title>
+
+    <!-- externl links -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body onload="loaded()">
+
+    <!-- ------ for spinner -->
+    <div id="loading"></div>
+
+ 
+  <!-- ------ front page -->
+    <section id="header">
+        <div class="container">
+            <nav>
+                <h4 class="logo">Port<span style="color:white;">folio.</span></h4>
+
+                <ul class="navbar-list" id="sideMenu">
+                    <li><a href="#" class="header active-page">Home</a></li>
+                    <li ><a href="#about" class="about">About</a></li>
+                    <li><a href="#projects" class="projects">Projects</a></li>
+                    <li><a href="#contact" class="contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark fa-2x" onclick="closemenu()"></i>
+                </ul>
+
+                <i class="fa-solid fa-bars fa-2x" onclick="openmenu()"></i>
+            </nav>
+
+
+            <!-- shooting star -->
+            <div class="shooting-star">
+                <div class="star star1"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+            </div>
+
+            <!-- header text -->
+            <div class="header-text">
+                <h1>Hello,I'm<span> Parul Saini.</span></h1>
+                <div>
+                    <p>I'm a Web Developer who loves to design web pages <br>with a serious
+                        passion for <span>UI effects and animations</span>.<br> 
+                        My priority is to ensure that my websites meet user <br> expectations by ensuring they look good, run smoothly <br> and offer easy access points with no loading issues. 
+                       
+                </div>
+                <!-- <a href="https://drive.google.com/file/d/1s1BmWvXPV-mHIA4GDwLsle3UZj2RqCJC/view?usp=sharing"
+                        class="btn" target="_blank" style="margin-top:10px;">View Resume</a>   -->
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!------------ about page -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-1" data-aos="fade-out" data-aos-duration='4000'>
+                    <img src="images/me3.jpeg" alt="me" title="Parul-Saini">
+                </div>
+
+                <div class="about-col-2" data-aos="fade-out">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm <span>Parul-Saini</span> pursuing a <span> B-Tech in Computer Science and Engineering</span> from Maharaja Agrasen Institute of technology with current grade point of <span>9.61</span> CGPA .Currently I'm working on Web development but also want to explore my potential in <span>Blockchain development</span>. 
+                    <br> I'm a self-taught programmer who is hardworking and inquisitive about new technologies.I am enthusiastic and sincere.I love to explore new technologies and make products that make life easier.</p>
+
+                    <!-- block to show the skills,education and experience  -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    </div>
+
+                    <!-- for skills -->
+                    <div class="tab-contents active-tab" id="skills">
+
+                        <div class="bar flex">
+                            <div class="bar fill" style="width: 80%;"  data-aos="new-animation">
+                                <div class="tag flex">HTML5</div>
+                            </div>
+                            <span class="percentage">90%</span>
+                        </div>
+                        <div class="bar flex">
+                            <div class="bar fill" style="width: 80%;">
+                                <div class="tag flex">CSS</div>
+                            </div>
+                            <span class="percentage">90%</span>
+                        </div>
+                        <div class="bar flex">
+                            <div class="bar fill" style="width: 70%;">
+                                <div class="tag flex">JAVASCRIPT</div>
+                            </div>
+                            <span class="percentage">80%</span>
+                        </div>
+                        <div class="bar flex">
+                            <div class="bar fill" style="width: 80%;">
+                                <div class="tag flex">Bootstrap</div>
+                            </div>
+                            <span class="percentage">90%</span>
+                        </div>
+                        <div class="bar flex">
+                            <div class="bar fill" style="width: 60%;">
+                                <div class="tag flex">React</div>
+                            </div>
+                            <span class="percentage">70%</span>
+                        </div>
+                        <div class="bar flex">
+                            <div class="bar fill" style="width: 65%;">
+                                <div class="tag flex">Nodejs</div>
+                            </div>
+                            <span class="percentage">75%</span>
+                        </div>
+                        <div class="bar flex">
+                            <div class="bar fill" style="width: 60%;">
+                                <div class="tag flex">MongoDb</div>
+                            </div>
+                            <span class="percentage">70%</span>
+                        </div>
+                       
+                        <div class="bar flex">
+                            <div class="bar fill" style="width: 70%;">
+                                <div class="tag flex">C++/C</div>
+                            </div>
+                            <span class="percentage">80%</span>
+                        </div>
+                       
+                    </div>
+
+                    <!-- block to show the education -->
+                    <div class="tab-contents" id="education">
+                    
+                        <ul>
+                            <li><span>2020 - Current | CGPA-9.6</span> <br> B.tech(Computer Science And Engineering)
+                            </li>
+                            <li><span>2019 - 2020 | 86%</span> <br>Class-XII</li>
+                            <li><span>2017 - 2018 | 85%</span> <br>Class-XI </li>
+                        </ul>
+                    </div>
+
+                    <!-- block to show the experience -->
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>2022</span> <br><br>Full stack development Training at <br> All soft solutions pvt. ltd. <br>
+                               <span> View my certificates:</span><a href="https://drive.google.com/drive/folders/1SC5Qm83iofJQOsTUy5RYlDloxVP3dpRP?usp=sharing" target="_blank" style=" color: #e54f8cc9;">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </section> <!-- about section finsih -->
+
+
+
+    <!---------- service section -->
+    <div id="services">
+        <div class="container">
+
+            <h1 class="sub-title" data-aos="fade-right">My Services</h1>
+            <!-- services list  -->
+            <div class="services-list" data-aos="flip-up">
+                
+                <div>
+                    <i class="fa-regular fa-lightbulb fa-3x"></i>
+                    <h2>UX/UI Design</h2>
+                    <p>My strong preference is to provide intuitive UX/UI by ensuring that websites look good and function properly. My current focus is optimizing the customer experience. </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop fa-3x"> </i>
+                    <i class="fa-solid fa-mobile fa-2x"></i>
+
+                    <h2>Responsive</h2>
+                    <p>My websites are responsive. I create layouts that will work on any devices whether it is desktop or mobile.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code fa-3x"></i>
+                    <h2>Fast</h2>
+                    <p>Fast load times and lag free interaction is my highest priority.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!------------ my projects -->
+    <section id="projects">
+        <div class="container">
+            <h1 class="sub-title" style="text-align:center ;" data-aos="zoom-out-in">Projects</h1>
+
+            <div class="work-list" data-aos="slide-up">
+                <div class="work" style="box-shadow: 0px 0px 4px white;">
+                    <img src="images/portfolio.png" alt="My portfolio" >
+                    <div class="layer">
+                        <h3>My Portfolio</h3>
+                        <p>This is a portfolio website to represent my skills and the work I have done.</p>
+                        <a href="/">
+                            <i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project1.png" alt="loud cover">
+                    <div class="layer">
+                        <h3>Cloud Cover</h3>
+                        <p>This is a simple Weather-Web application that tells weather details of different cites across the globe.</p>
+                        <a href="https://parul-weather-websites.herokuapp.com/" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i></a>
+                    </div>
+                </div>
+                
+                <div class="work">
+                    <img src="images/project2.png" alt="Magic notes" >
+                    <div class="layer">
+                        <h3>Magic Notes</h3>
+                        <p>On this website, you can create online notes.It provides you a place to save all your creative ideas, thoughts and critical project details and access them quickly whenever needed.</p>
+                        <a href="https://maagic-note.netlify.app/" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project4.png" alt="Quick news">
+                    <div class="layer">
+                        <h3>Quick News</h3>
+                        <p>In this website,you can get the top headlines of country  INDIA. By click on that particular link you get get the whole information about that headline.</p>
+                        <a href="https://quick-news-website.herokuapp.com/" target="_blank" onclick="window.location.href">
+                            <i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i></a>
+                    </div>
+                </div>
+                <div class="work" style="box-shadow: 0px 0px 5px white;">
+                    <img src="images/project3_2.png" alt="Parsim point">
+                    <div class="layer">
+                        <h3>ParSim Point</h3>
+                        <p>You can buy fashion-related products online including clothes, shoes, and other accessories.It is perfect for those individuals who has busy routines.</p>
+                        <p id="under_development"><b>Website is Under Development</b></p>
+                        <a href="https://parsim-point-collection.herokuapp.com/" target="_blank" onclick="window.location.href">
+                            <i class="fa-solid fa-arrow-up-right-from-square fa-2x"></i></a>
+                    </div>
+                </div>
+                
+            
+            </div>
+
+        </div>
+    </section>
+
+    <!--  -----------CONATCT SECTION ------ -->
+    <section id="contact">
+        <div class="container">
+            <h1 class="sub-title" style="text-align: center;" data-aos="fade-right">Contact Me</h1>
+            <div class="row contact-row">
+                <!-- ---SOCILA MEDIA -->
+                <div class="contact-left">
+                    <p><i class="fa-solid fa-share" style="color: white;"></i> parulsaini2803@gmail.com</p>
+
+                    <div class="social-media">
+                        <a href="https://www.linkedin.com/in/parul-saini-190550229/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in fa-2x" style="color: white;"></i></a>
+                        <a href="https://github.com/parul-saini" target="_blank"><i class="fa-brands  fa-github fa-2x"
+                                style="color: white;"></i></a>
+                        <a href="mailto: parulsaini2803@gmail.com" target="_blank"><i class="fa-solid fa-at fa-2x"
+                                style="color: white;"></i></a>
+                        <a href="https://www.instagram.com/parulsaini_28/" target="_blank"><i
+                                class="fa-brands  fa-instagram fa-2x" style="color: white;"></i></a>
+                        <a href="https://t.me/Parul03" target="_blank"><i class="fa-brands  fa-telegram fa-2x"
+                                style="color: white;"></i></a>
+                    </div>
+
+                    <a href="https://drive.google.com/file/d/1s1BmWvXPV-mHIA4GDwLsle3UZj2RqCJC/view?usp=sharing"
+                        class="btn" target="_blank">My Resume</a>
+                </div>
+
+                <!-- -----------conatct form -->
+                <div class="contact-right">
+                    <h3>Message Me</h3>
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="Email" placeholder="Enter Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        <span id="msg"></span>  <!--used  to display the msg  -->
+                       
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <footer>
+        <div class="copyright">
+            <a href="#header" class="back-to-top"><i class="fa-solid fa-angles-up fa-2x"></i></a>
+            <p>Created by Parul-Saini | &copy; 2022</p>
+        </div>
+    </footer>
+
+    <!--  script to submit the form info -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxlB4HspNCa74VwqUf1zjQM_l8OkdwQ4A3-Q_LICx_2lJVbOufvg3ahUEKor76vjK01/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg');
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+<script src="js/script.js"></script>
+
+
+<!-- for spinner on loading the page -->
+<script>
+    let load = document.getElementById("loading");
+  
+    function loaded(){
+        console.log("loading");
+       load.style.display="none";
+       nav.style.display="flex";
+
+    }
+ </script>
+ 
+</body>
+
+<!-- aos script  -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset:300,
+    duration:1000,
+  });
+</script>
+
+</html>
+
+
