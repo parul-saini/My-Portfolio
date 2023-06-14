@@ -21,7 +21,7 @@ body {
 #loading{
     width: 100%;
     height: 100vh;
-    background: black url("https://gifimage.net/wp-content/uploads/2017/09/animasi-gif-loading-10.gif") no-repeat center;
+    background: black url("../images/silverloader.gif") no-repeat center;
     filter: sepia(1);
 }
 
