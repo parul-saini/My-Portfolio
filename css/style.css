@@ -429,7 +429,7 @@ nav ul li a:hover::after {
 
 .work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-gap: 21px;
     margin-top: 50px;
 }
@@ -812,6 +812,13 @@ nav .fa-solid {
 .header-text{
     margin-top: 26vh;
 }
+}
+
+/* to handle the projects folder for large screen */
+@media only screen and (min-width:1260px){
+    .work-list {
+        grid-template-columns: repeat(3, minmax(250px, 1fr));
+    }
 }
 
 
