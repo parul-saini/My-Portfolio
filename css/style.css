@@ -274,6 +274,7 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .about-col-1 {
@@ -605,7 +606,7 @@ form textarea {
     background: #c0287b;
 }
 
-.fa-telegram:hover {
+.fa-twitter:hover {
     background: #038ed8;
     ;
 }
