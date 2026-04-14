@@ -354,7 +354,7 @@ nav ul li a:hover::after {
     background: black;
     left: 0px;
     top: -4px;
-    width: 7rem;
+    width: 10rem;
     position: absolute;
 }
 
